@@ -1,0 +1,173 @@
+/* 
+----01 TYPOGRAPHY SYSTEM
+- Font size in PX:
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 
+/ 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line height: 
+Default: 1
+Small: 1.05
+medium: 1.2
+large: 1.8
+Paragraph default: 1.6
+
+- Letter spacing:
+
+--- 02 COLORS:
+
+- Primary: 
+- Tints: 
+- Shadows: 
+- Accents: 
+- Greys: #333
+
+
+--- 03 SHADOWS:
+
+--- BORDER RADIUS:
+
+--- WHITE SPACE:
+2 / 4 / 8 / 12 / 16 / 24 / 32 
+/ 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "lora", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: #333;
+  background-color: #eee;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem 9.6rem;
+  background-color: #eee;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+}
+
+.house-img {
+  width: 96rem;
+  height: 54rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  transform: translateY(-50%);
+  padding: 9.6rem 0;
+  padding-left: 9.6rem;
+  padding-right: 6.4rem;
+  clip-path: polygon(0 22%, 100% 10%, 100% 79%, 21% 94%);
+  justify-content: center;
+  margin-left: 2.4rem;
+}
+
+.house-name {
+  font-size: 3.2rem;
+}
+
+.house-description {
+  font-size: 1.8rem;
+}
+
+.info:link,
+.info:visited {
+  font-size: 1.4rem;
+  margin-left: 2.4rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.info:hover,
+.info:active {
+  color: #111;
+}
+
+.link-arrow {
+  display: inline-block;
+  padding-right: 2.4rem;
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  border: none;
+  background: none;
+  font-size: 6.4rem;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.left-arrow {
+  left: 3%;
+  top: 50%;
+}
+
+.right-arrow {
+  right: 3%;
+  top: 50%;
+}
+
+.right-arrow:hover {
+  transform: translateX(15%);
+}
+
+.left-arrow:hover {
+  transform: translateX(-15%);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.nav-item {
+  width: 9.6rem;
+  height: 1.2rem;
+  background-color: #eee;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.nav-item--active {
+  background-color: #333;
+}
